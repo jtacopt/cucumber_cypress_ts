@@ -6,14 +6,15 @@
   "scripts": {
     "test": "cypress run"
   },
-  "author": "Lukasz Gandecki",
+  "author": "João Carvalho <jtacopt@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^8.7.0",
+    "cypress": "^12.13.0",
     "cypress-cucumber-preprocessor": "^4.3.0",
     "typescript": "^4.4.4"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/passWithTypescript"
   }
 }
