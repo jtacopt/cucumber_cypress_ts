@@ -1,10 +1,58 @@
-# cypress-cucumber-typescript-example
-Example of using Cypress with Cucumber and TypeScript
+# Cypress Cucumber Typescript
 
-All the configuration is in [cypress/plugins/index.js](cypress/plugins/index.js)
+This project demonstrates how to set up Cypress tests with TypeScript and integrate them with Sauce Labs for cross-browser testing.
 
-TypeScript step definitions are in [cypress/integration/passWithTypescript](cypress/integration/passWithTypescript)
+## Prerequisites
 
-(I'm using the nonGlobalStepDefinitions configuration in the [package.json](package.json) )
+Before running the tests, ensure you have the following installed:
 
-You can also use our Cucumber plugin with TypeScript and webpack: [https://github.com/TheBrainFamily/cypress-cucumber-webpack-typescript-example/](https://github.com/TheBrainFamily/cypress-cucumber-webpack-typescript-example/)
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) package manager
+
+## Installation
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/your-username/cypress-typescript-saucelabs.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd cypress-typescript-saucelabs
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+## Configuration
+
+### Sauce Labs Setup
+
+1. Obtain your Sauce Labs credentials (username and access key).
+
+2. Set the following environment variables:
+
+    ```bash
+    export SAUCE_USERNAME=your_sauce_username
+    export SAUCE_ACCESS_KEY=your_sauce_access_key
+    ```
+
+### Cypress Configuration
+
+Cypress configuration is located in `cypress.json`. Update the configurations as needed for your project.
+
+## Running Tests
+
+### Locally
+
+To run tests locally, use the following command:
+
+```bash
+make test-local

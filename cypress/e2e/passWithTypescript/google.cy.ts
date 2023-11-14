@@ -1,11 +1,11 @@
 import {Before, Given} from "cypress-cucumber-preprocessor/steps";
-import {cookieBanner} from "../../pages/CookieBanner";
+import {shadowDom} from "../../pages/ShadowDom";
 
 Before(() => {
   cy.log("Login Tests - Started");
-  cy.visit('/en-au/shop/vehicle/srp/demo');
+  cy.visit('/shadowdom');
 });
 
-Given(/I pass/, () => {
-  cookieBanner.acceptCookie();
+Given(/Generate GUID/, () => {
+  shadowDom.generateUID();
 });

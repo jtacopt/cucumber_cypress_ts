@@ -17,6 +17,6 @@ export default defineConfig({
     defaultCommandTimeout: 10000,
     requestTimeout: 15000,
     execTimeout: 120000,
-    baseUrl: 'https://shop.mercedes-benz.com'
+    baseUrl: 'http://www.uitestingplayground.com'
   },
 })
